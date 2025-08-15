@@ -99,7 +99,7 @@ export default function Index() {
             </div>
 
             {/* Loan Calculator */}
-            <Card id="calculator" className="shadow-2xl border-0 bg-gradient-to-br from-card to-card/50 backdrop-blur-sm animate-fade-in">
+            <Card id="calculator" className="shadow-3d card-3d shadow-2xl border-0 bg-gradient-to-br from-card to-card/50 backdrop-blur-sm animate-fade-in perspective">
               <CardHeader className="pb-4">
                 <CardTitle className="flex items-center text-2xl">
                   <Icon name="Calculator" className="mr-3 h-6 w-6 text-primary" />
@@ -185,7 +185,7 @@ export default function Index() {
           </div>
 
           <div className="grid md:grid-cols-3 gap-8">
-            <Card className="text-center hover:shadow-lg transition-shadow animate-scale-in">
+            <Card className="text-center shadow-3d-hover transition-all duration-300 animate-scale-in card-3d">
               <CardContent className="pt-6">
                 <div className="h-12 w-12 mx-auto mb-4 rounded-full bg-gradient-to-r from-primary to-accent flex items-center justify-center">
                   <Icon name="Shield" className="h-6 w-6 text-white" />

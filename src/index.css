@@ -110,4 +110,55 @@
   h6 {
     font-family: "Montserrat", sans-serif;
   }
+
+  /* 3D Effects */
+  .card-3d {
+    transform-style: preserve-3d;
+    perspective: 1000px;
+    transition: transform 0.3s ease;
+  }
+
+  .card-3d:hover {
+    transform: rotateY(5deg) rotateX(5deg) translateZ(20px);
+  }
+
+  .shadow-3d {
+    box-shadow:
+      0 4px 8px rgba(0, 0, 0, 0.1),
+      0 8px 16px rgba(0, 0, 0, 0.1),
+      0 16px 32px rgba(0, 0, 0, 0.1);
+  }
+
+  .shadow-3d-hover:hover {
+    box-shadow:
+      0 8px 16px rgba(0, 0, 0, 0.15),
+      0 16px 32px rgba(0, 0, 0, 0.15),
+      0 32px 64px rgba(0, 0, 0, 0.15);
+    transform: translateY(-4px) rotateX(5deg);
+  }
+
+  .perspective {
+    perspective: 1000px;
+    transform-style: preserve-3d;
+  }
+
+  .rotate-y-6 {
+    transform: rotateY(6deg);
+  }
+
+  .rotate-x-6 {
+    transform: rotateX(6deg);
+  }
+
+  .depth-1 {
+    transform: translateZ(10px);
+  }
+
+  .depth-2 {
+    transform: translateZ(20px);
+  }
+
+  .depth-3 {
+    transform: translateZ(30px);
+  }
 }
